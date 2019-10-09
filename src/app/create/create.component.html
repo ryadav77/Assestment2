@@ -1,0 +1,42 @@
+<div class="container">
+    <form (ngSubmit)="createEmployee()" class="col-md-6">
+        <h2>Personal Information</h2>
+        <div class="form-group">
+            <label for="my-input">Employee Name</label>
+            <input placeholder="Enter name" class="form-control" type="text" name="name" [(ngModel)]="name">
+        </div>
+        <div class="form-group">
+            <label for="my-input">Date of Birth(dd-mm-yyyy)</label>
+            <input  class="form-control" type="text" name="dob" [(ngModel)]="dob">
+        </div>
+        <div class="form-group">
+            <label for="my-input">Home Address</label>
+            "
+            <textarea id="input" class="form-control" name="address" [(ngModel)]="address" rows="3"
+                y></textarea>
+        
+        </div>
+        <div class="form-group">
+            <label for="my-input">Phone Number</label>
+            <input  class="form-control" type="text" name="phone" [(ngModel)]="phone">
+        </div>
+        <h2>Educational Infomation</h2>
+        <div class="form-group">
+            <label for="my-input">Degree</label>
+            <input class="form-control" type="text" name="degree" [(ngModel)]="degree">
+        </div>
+        <div class="form-group">
+            <label for="my-input">Marks</label>
+            <input class="form-control" type="number" name="name" [(ngModel)]="marks">
+        </div>
+        <div class="form-group">
+            <label for="my-input">Stream</label>
+            <input class="form-control" type="text" name="stream" [(ngModel)]="stream">
+        </div>
+        <div class="form-group">
+            <label for="my-input">College</label>
+            <input class="form-control" type="text" name="college" [(ngModel)]="college">
+        </div>
+        <button class="btn btn-primary" type="submit">Add Employee</button>
+    </form>
+</div>
